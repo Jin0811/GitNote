@@ -54,3 +54,11 @@
 - 创建远程分支到本地：`git checkout -b <branchname> origin/<branchname>`
 - 关联本地分支与远程分支：`git branch --set-upstream-to=origin/<branchname> <branchname>`
 - 推送代码失败时：先 `git pull` 拉取最新代码，本地进行合并，解决冲突，再 `git push` 推送
+
+- 查看历史版本提交：`git log --pretty=oneline --abbrev-commit`
+- 创建标签：`git tag <tagname>`
+- 给历史提交打标签：`git tag <tagname> <commit id>`
+- 查看标签信息：`git show <tagname>`
+- 查看全部标签：`git tag`
+- 创建标签时添加详细说明：`git tag -a <tagname> -m '<info>'`
+- 创建标签时添加详细说明：`git tag -a <tagname> <commit id> -m '<info>'`
