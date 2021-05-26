@@ -62,3 +62,7 @@
 - 查看全部标签：`git tag`
 - 创建标签时添加详细说明：`git tag -a <tagname> -m '<info>'`
 - 创建标签时添加详细说明：`git tag -a <tagname> <commit id> -m '<info>'`
+- 推送本地标签到远程仓库：`git push origin <tagname>`
+- 推送本地所有未推送过的标签到远程仓库：`git push origin --tags`
+- 删除本地标签：`git tag -d <tagname>`
+- 删除一个远程标签，要先删除本地标签：`git push origin :refs/tags/<tagname>`
